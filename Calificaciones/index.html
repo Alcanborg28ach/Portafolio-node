@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Notas - Sistema de Evaluación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h2> Control de Notas</h2>
+            <p>Sistema de evaluación académica</p>
+        </div>
+        
+        <div class="content">
+            <label>👤 Nombre del Estudiante</label>
+            <input type="text" id="nombre" placeholder="Ej. Alejandro">
+
+            <p class="section-title">CALIFICACIONES (0 - 10)</p>
+            <div class="calificaciones-grid">
+                <div>
+                    <label>U1</label>
+                    <input type="number" id="u1" min="0" max="10" placeholder="0">
+                </div>
+                <div>
+                    <label>U2</label>
+                    <input type="number" id="u2" min="0" max="10" placeholder="0">
+                </div>
+                <div>
+                    <label>U3</label>
+                    <input type="number" id="u3" min="0" max="10" placeholder="0">
+                </div>
+            </div>
+
+            <div class="results-grid">
+                <div>
+                    <label>Promedio Final</label>
+                    <input type="text" id="promedio" readonly>
+                </div>
+                <div>
+                    <label>Estatus</label>
+                    <input type="text" id="estatus" readonly class="status-field">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="btnCalcular" class="btn-convertir">Calcular</button>
+                <button id="btnLimpiar" class="btn-limpiar">Limpiar</button>
+            </div>
+            <button id="btnRegresar" class="btn-regresar">← Regresar al Inicio</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
