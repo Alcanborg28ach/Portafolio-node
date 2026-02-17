@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor MXN a USD</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #32050d 0%, #511a24 50%, #8e2336 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #511a24;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #btnConvertir {
+            background-color: #8e2336;
+            color: white;
+        }
+
+        #btnConvertir:hover {
+            background-color: #32050d;
+        }
+
+        #btnLimpiar {
+            background-color: #ccc;
+        }
+
+        #btnLimpiar:hover {
+            background-color: #999;
+            color: white;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+        <h2>💵 Conversor MXN → USD</h2>
+
+        <input type="number" id="pesos" placeholder="Cantidad en pesos (MXN)">
+
+        <input type="text" id="dolares" placeholder="Resultado en dólares (USD)" readonly>
+
+        <input type="text" id="tipoCambio" placeholder="Tipo de cambio" readonly>
+
+        <div class="buttons">
+            <button id="btnConvertir">Convertir</button>
+            <button id="btnLimpiar">Limpiar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
