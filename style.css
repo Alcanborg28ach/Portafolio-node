@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    /* Tu degradado vino solicitado */
+    background: linear-gradient(135deg, #32050d 0%, #511a24 50%, #8e2336 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.grid-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* Colores de iconos */
+.color-notas { background-color: #e3f2fd; }
+.color-moneda { background-color: #fff3e0; }
+
+.card h3 {
+    margin: 10px 0;
+    color: #511a24; /* Tu color vino */
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-proyecto {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8e2336; /* Tu rojo vino */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #8e2336;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-proyecto:hover {
+    background-color: #8e2336;
+    color: white;
+}
